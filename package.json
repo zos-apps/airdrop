@@ -1,0 +1,105 @@
+{
+  "name": "@zos-apps/airdrop",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "zos": {
+    "id": "ai.hanzo.airdrop",
+    "name": "AirDrop",
+    "icon": "📡",
+    "category": "utilities",
+    "description": "Share files wirelessly with nearby devices",
+    "permissions": [
+      "network",
+      "filesystem"
+    ],
+    "window": {
+      "defaultSize": {
+        "width": 400,
+        "height": 500
+      },
+      "resizable": false
+    },
+    "featured": true,
+    "tags": [
+      "sharing",
+      "wireless",
+      "transfer"
+    ],
+    "about": "Wirelessly share files between devices using AirDrop protocol.",
+    "help": [
+      "Select files to share",
+      "Choose recipient device",
+      "Accept on receiving device"
+    ],
+    "docs": "https://zos-apps.github.io/airdrop",
+    "site": "https://github.com/zos-apps/airdrop",
+    "features": [
+      "Wireless file transfer",
+      "Device discovery",
+      "Secure sharing",
+      "Photo sharing"
+    ],
+    "shortcuts": [
+      "⌘D Share",
+      "Esc Cancel"
+    ],
+    "screenshots": {
+      "hero": "screenshots/hero.png",
+      "images": [
+        "screenshots/1-main.png",
+        "screenshots/2-feature.png"
+      ]
+    },
+    "downloads": {
+      "web": "https://zos-apps.github.io/airdrop"
+    },
+    "releaseDate": "2024-12-31",
+    "support": "https://github.com/zos-apps/airdrop/issues",
+    "changelog": "https://github.com/zos-apps/airdrop/releases"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@zos-apps/config": "workspace:*",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "author": "Hanzo AI",
+  "license": "MIT",
+  "description": "Share files wirelessly with nearby devices",
+  "homepage": "https://zos-apps.github.io/airdrop",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zos-apps/airdrop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zos-apps/airdrop/issues"
+  },
+  "keywords": [
+    "zos",
+    "app",
+    "airdrop",
+    "sharing",
+    "wireless",
+    "transfer"
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/zos-apps"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
